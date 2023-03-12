@@ -8,7 +8,7 @@
 
 // Adding AEMETKEY (constant with my personal API key)
 // Ask for another one for you here: https://opendata.aemet.es/centrodedescargas/inicio
-include('private.php');
+include('../private.php');
 
 // Municipality code: https://www.ine.es/daco/daco42/codmun/codmunmapa.htm
 CONST MUNICIPALITY = "04075"; // City: Almería --> Pulpí
