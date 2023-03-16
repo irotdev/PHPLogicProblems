@@ -7,7 +7,7 @@
  *      with a lot of numbers (1000 or more) --> rewrite and use listOfPrimeNumbers(..) only once.
  * (BONUS*2) -> Adding function "isPrimo2(..)" checking if a number is a prime number using a different method.
  * @author José Manuel Muñoz Simó | irotdev
- * @version v1.1
+ * @version v1.0
  */
 
 CONST NUMBERSTOCHECK = 5;
