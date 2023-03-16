@@ -5,6 +5,7 @@
  * (BONUS*) -> Function for do a list of prime numbers and function for show the list of prime numbers.
  * (IMPORTANT*) -> For check only some numbers, you can use isPrimo(..) without changes, but if you are going to use it
  *      with a lot of numbers (1000 or more) --> rewrite and use listOfPrimeNumbers(..) only once.
+ * (BONUS*2) -> Adding function "isPrimo2(..)" checking if a number is a prime number using a different method.
  * @author José Manuel Muñoz Simó | irotdev
  * @version v1.0
  */
@@ -23,6 +24,7 @@ function checkRandomListOfNumbers($numbersToCheck, $maxNumber) {
         echo $num . " -> ";
         echo "<br> Fibo_? " . (isFibonacci($num) ? "FIBONACCI" : "NO FIBONACCI");
         echo "<br> Primo? " . (isPrimo($num, $maxNumber) ? "PRIMO" : "NO PRIMO");
+        echo "<br> PriV2? " . (isPrimo2($num) ? "PRIMO" : "NO PRIMO");
         echo "<br> Par__? " . (isPar($num) ? "PAR" : "IMPAR" ) . "<br><br>";
     }
 }
@@ -50,6 +52,15 @@ function isPrimo($num, $maxNumberToCheck): bool {
             return true;
 
     return false;
+}
+
+// Without list of prime numbers but checking all the numbers
+function isPrimo2($num) {
+    for ($i = 2; $i <= sqrt($num); $i++)
+        if ($num % $i == 0)
+            return false;
+
+    return true;
 }
 
 
